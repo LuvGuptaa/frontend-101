@@ -1,1 +1,1 @@
-This repo contains some practice tasks for frontend
+This repo contains some practice tasks.
