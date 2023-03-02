@@ -1,1 +1,1 @@
-# frontend-101
+This repo contains some practice tasks for frontend
