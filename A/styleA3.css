@@ -1,0 +1,64 @@
+.main{
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.red{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.green{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+    transition: all 1s ease;
+}
+.blue{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+    transition: all 1s ease;
+}
+.yellow{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    transition: all 1s ease;
+}
+h1{
+    position: absolute;
+    left: 175px;
+    top: 140px;
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: 400;
+}
+.main:hover{
+    cursor: pointer;
+}
+.main:hover .red{
+    transform: rotate(90deg);
+    transform-origin: left top;
+}
+.main:hover .yellow{
+    transform: rotate(-90deg);
+    transform-origin: right top;
+}
+.main:hover .blue{
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+.main:hover .green{
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+}
