@@ -1,0 +1,70 @@
+.main{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(70, 67, 67);
+    margin-top: 200px;
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.btn{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(70, 67, 67);
+    transition: border-color 1s ease;
+}
+.btn_bar{
+    width: 170px;
+    height: 4px;
+    background-color: rgb(204, 61, 140);
+    border-radius: 1rem;
+    transition: all .5s ease;
+}
+.btn_bar::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 4px;
+    background-color: rgb(204, 61, 140);
+    border-radius: 1rem;
+    transform: translateY(-40px);
+    transition: all .5s ease;
+}
+.btn_bar::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 4px;
+    background-color: rgb(204, 61, 140);
+    border-radius: 1rem;
+    transform: translateY(40px);
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-color: white;
+}
+.btn:hover .btn_bar{
+    transform: translateX(50px);
+    background: transparent;
+}
+.btn:hover .btn_bar::before{
+    background-color: white;
+    transform: rotate(45deg) translateX(-40px) translateY(38px);
+}
+.btn:hover .btn_bar::after{
+    background-color: white;
+    transform: rotate(-45deg) translateX(-40px) translateY(-38px);
+}
+.main:hover{
+    background-color: rgb(204, 61, 140);
+}
