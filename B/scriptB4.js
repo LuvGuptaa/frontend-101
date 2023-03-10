@@ -135,17 +135,32 @@ window.onload = () => {
     createDots();
     var id = 1;
     document.addEventListener('keydown', (e) => {
-        if (e.keyCode == 39) {
-            console.log("Right Arrow is pressed!");
-            navigateEvent(id+1);
-            id++;
+        if (slidesInLastSet == 0) {
+            if (e.keyCode == 39 && id != numberOfSet) {
+                console.log("Right Arrow is pressed!");
+                navigateEvent(id+1);
+                id++;
+            }
+            else if (e.keyCode == 37 && id != 1) {
+                console.log("Left Arrow is pressed!");
+                navigateEvent(id-1);
+                id--;
+            }
+            else{}
         }
-        else if (e.keyCode == 37) {
-            console.log("Left Arrow is pressed!");
-            navigateEvent(id-1);
-            id--;
+        else {
+            if (e.keyCode == 39 && id != numberOfSet+1) {
+                console.log("Right Arrow is pressed!");
+                navigateEvent(id+1);
+                id++;
+            }
+            else if (e.keyCode == 37 && id != 1) {
+                console.log("Left Arrow is pressed!");
+                navigateEvent(id-1);
+                id--;
+            }
+            else{}
         }
-        else{}
     })
 }
 
