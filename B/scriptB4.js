@@ -117,9 +117,9 @@ const navigateEvent = (dotIndex) => {
     if (setNumber != dotIndex) {
         setNumber = dotIndex - 1;
         changeEventSet();
-        clearInterval(eventSetChangeInterval);
+        // clearInterval(eventSetChangeInterval);
 
-        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        // eventSetChangeInterval = setInterval(changeEventSet, 5000);
         
     }
 }
@@ -128,9 +128,10 @@ const navigateEvent = (dotIndex) => {
 window.onload = () => {
     setTimeout(() => {
         changeEventSet();
-        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        // eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        // console.log(id);
 // --------------Set Interval for Set Change-------------
-    }, 1);
+    }, 0.5);
     createEvent();
     createDots();
     var id = 1;
