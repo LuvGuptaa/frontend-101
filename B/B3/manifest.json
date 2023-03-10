@@ -2,7 +2,6 @@
     "manifest_version": 2,
     "name": "DVM Website Logger",
     "version": "1.0",
-    "default_locale": "en",
     "description": "Logs a custom message when visiting DVM websites.",
     "permissions": [
       "tabs"
