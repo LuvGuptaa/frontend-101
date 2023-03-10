@@ -133,5 +133,19 @@ window.onload = () => {
     }, 1);
     createEvent();
     createDots();
+    var id = 1;
+    document.addEventListener('keydown', (e) => {
+        if (e.keyCode == 39) {
+            console.log("Right Arrow is pressed!");
+            navigateEvent(id+1);
+            id++;
+        }
+        else if (e.keyCode == 37) {
+            console.log("Left Arrow is pressed!");
+            navigateEvent(id-1);
+            id--;
+        }
+        else{}
+    })
 }
 
