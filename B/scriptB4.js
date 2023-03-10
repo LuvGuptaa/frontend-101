@@ -150,12 +150,12 @@ window.onload = () => {
         }
         else {
             if (e.keyCode == 39 && id != numberOfSet+1) {
-                console.log("Right Arrow is pressed!");
+                console.log("Right Arrow is pressed!"); //Right
                 navigateEvent(id+1);
                 id++;
             }
             else if (e.keyCode == 37 && id != 1) {
-                console.log("Left Arrow is pressed!");
+                console.log("Left Arrow is pressed!"); //Left
                 navigateEvent(id-1);
                 id--;
             }
