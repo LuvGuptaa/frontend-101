@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "DVM Website Logger",
+    "version": "1.0",
+    "default_locale": "en",
+    "description": "Logs a custom message when visiting DVM websites.",
+    "permissions": [
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://bits-oasis.org/*",
+          "https://bits-apogee.org/*",
+          "https://bits-bosm.org/*"
+        ],
+        "js": ["scriptB3.js"]
+      }
+    ]
+  }
+  
