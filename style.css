@@ -1,0 +1,17 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    font-size: 1.5rem;
+}
